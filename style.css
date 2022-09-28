@@ -31,6 +31,7 @@ h2,
 h3 {
   color: var(--color-headings);
   margin-bottom: 1rem;
+  line-height: 1.1;
 }
 
 h1 {
@@ -190,6 +191,13 @@ a {
   border-radius: 30px;
 }
 
+.input-group .btn .icon {
+  height: 2rem;
+  width: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
 .btn--stretched {
   padding: 2rem 6rem;
   margin: 0;
@@ -245,7 +253,7 @@ a {
 
 /* INPUTS */
 .input {
-  padding: 2rem 1.5rem;
+  padding: 2rem 2.5rem;
   outline: 0;
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
@@ -273,7 +281,7 @@ a {
 .input-group .input {
   border: 0;
   flex-grow: 1;
-  padding: 1.5rem 1rem;
+  /* padding: 1.5rem 1rem; */
 }
 .input-group .btn {
   margin: 4px;
@@ -589,7 +597,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .block__header {
-    text-align: left;
+    /* text-align: left; */
   }
   .hero__heading {
     font-size: 8rem;
@@ -597,5 +605,41 @@ a {
 
   .hero__tagline {
     font-size: 2rem;
+  }
+}
+
+/* Domain BLOCK */
+.input-group .btn {
+  padding: 2rem 2.2rem;
+  margin: 0.4rem;
+}
+
+.block__domain .input-group {
+  box-shadow: 0 0 30px 20px #e6ebee;
+  border: 0;
+  max-width: 700px;
+  margin: 4rem auto;
+}
+
+.block__domain-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+  justify-items: center;
+  font-weight: 600;
+  font-size: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .input-group .btn {
+    padding: 2rem 5rem;
+  }
+
+  .block__domain-grid {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
 }
